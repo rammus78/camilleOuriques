@@ -2,18 +2,18 @@ create database casaMuitoDinheiro;
 use casaMuitoDinheiro;
 
 create table operacoes (
-    numerooperacao int,
+    numerooperacao int NOT NULL,
     nomecliente varchar (30) NOT NULL,
-    moedaorigem varchar,
-    moedadestino varchar,
+    moedaorigem numeric(10, 2),
+    moedadestino numeric(10, 2),
     dataoperacao date,
-    valororiginal varchar,
-    valorconvertido varchar,
-    taxacobrada varchar,
-    primary key (codigo)
+    valororiginal numeric(10, 2),
+    valorconvertido numeric(10, 2),
+    taxacobrada numeric(10, 2),
+    primary key (numerooperacao)
 );
 
-insert into operacoes(numerooperacao, nomecliente, moedaorigem, moedadestino, dataoperacao, valororiginal, valorconvertido, taxacobrada) VALUES ("1","Joao", "50", "250", "12/02/2021", "5", "10", "25");
+insert into operacoes(numerooperacao, nomecliente, moedaorigem, moedadestino, dataoperacao, valororiginal, valorconvertido, taxacobrada) VALUES (1, "Joao", 50, 250, "2021/02/12", 5, 10, 25);
 
 select * from operacoes;
 
