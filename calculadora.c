@@ -29,7 +29,6 @@ int main (void){
 
         }
         printf("\nSubtotal= %0.2f", subtotal);
-        printf("\nFixo=", fixo);
         printf("\nTaxa=%0.2f", taxa);
         printf("\nTotal= %0.2f", total);
         printf("\nDigite 1 para recomecar\n");
