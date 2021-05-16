@@ -34,5 +34,5 @@ int main (void){
         printf("\nDigite 1 para recomecar\n");
         scanf("%i", &start);
 
-    }while(start==1);
-}
+    }while(start==1);a
+}a
